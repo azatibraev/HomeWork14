@@ -3,24 +3,48 @@ package com.company;
 import java.util.Arrays;
 
 public class Claass {
+
     private int number;
     private String words;
     private int[] array;
 
+    public Claass() {
+    }
 
-    public Claass(int number, String words, int... array) {
-
-        System.out.println(" This is a numbers : " + number);
+    public Claass(int number, String words, int[] array) {
         this.number = number;
-
-        System.out.println(" This is a words : " + words);
         this.words = words;
+        this.array = array;
+    }
 
-        System.out.print(" This is an Arrays: ");
+    public int getNumber() {
+        return number;
+    }
+
+    public void setNumber(int number) {
+        this.number = number;
+    }
+
+    public String getWords() {
+        return words;
+    }
+
+    public void setWords(String words) {
+        this.words = words;
+    }
+
+    public int[] getArray() {
+        return array;
+    }
+
+    public void setArray(int[] array) {
+        this.array = array;
+    }
+    public void info(){
+        System.out.println("Number: " + getNumber() + "\n Words: " + getWords());
+        System.out.print(" Arrays: ");
         for (int i : array) {
-            System.out.print(i + " ,");
+            System.out.print(i + ",");
         }
-            this.array = array;
     }
 }
-
